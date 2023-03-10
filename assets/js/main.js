@@ -5,19 +5,20 @@ let fizzbuzz = "fizzbuzz";
 
 
 for (let i = 1; i < 101; i++) {
-    const liElement = document.createElement("li");
-    ulElement.append(liElement);
-    
-    if (i % 3 == 0 && i % 5 == 0) {
-        i = "fizzbuzz";
-    } else if (i % 3 == 0) {
-        i = "fizz";
-    } else if (i % 5 == 0){
-        i = "buzz";
-    }
+    const liElement = document.createElement("li")
+    ulElement.append(liElement)
 
-    liElement.append(`${i}${fizz}${buzz}${fizzbuzz}`);
-   
+    if (i % 3 == 0 && i % 5 == 0) {
+        liElement.innerHTML = `${fizzbuzz}`
+    } else if (i % 3 == 0) {
+        liElement.innerHTML = `${fizz}`
+    } else if (i % 5 == 0){
+        liElement.innerHTML = `${buzz}`
+    }
+    else {
+        liElement.innerHTML = `${i}`
+    }   
 }
 
 console.log(ulElement);
+document.body.append(ulElement)
