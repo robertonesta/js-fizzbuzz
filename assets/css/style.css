@@ -1,0 +1,30 @@
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    width: 10%;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    color: white;
+    background-color: palegoldenrod;
+    align-content:center;
+}
+
+.fizzbuzz{
+    background-color: palegreen;
+}
+
+.fizz{
+    background-color: paleturquoise;
+}
+
+.buzz{
+    background-color: palevioletred;
+}
