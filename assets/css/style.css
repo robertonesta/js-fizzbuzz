@@ -4,17 +4,17 @@ ul{
     flex-wrap: wrap;
 }
 
-li{
+li{ 
+    display: flex;
     width: 10%;
     aspect-ratio: 1/1;
     border: 1px solid black;
     list-style-type: none;
-    justify-content: center;
-    text-align: center;
     margin: 1rem;
-    color: white;
     background-color: palegoldenrod;
-    align-content:center;
+    align-items:center;
+    justify-content: center ;
+
 }
 
 .fizzbuzz{
